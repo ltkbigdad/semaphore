@@ -2,10 +2,26 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+   
 }
 
-.semaphore{
-    width: 24em;
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+
+h1{
+    font-size: 3em;
+    margin: 5px;
+    margin-bottom: 18px;
+}
+
+#semaphore{
+    width: 18em;
     height: 40em;    
     border: 5px solid #c0c0c0;
     border-radius: 146px;
@@ -46,3 +62,106 @@ body{
 .greenLightOn{
     background: #06c406;
 }
+
+/* traffic light display off */
+
+#semaphore2{
+    width: 19em;
+    height: 40em;    
+    border: 5px solid #c0c0c0;
+    border-radius: 146px;
+    background: #000000;   
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+.light2{
+    width: 9em;
+    height: 10em;
+    border: 5px solid #c0c0c0;
+    border-radius: 117px;
+}
+
+.redLight2{
+    background: #8a0909;
+}
+
+.yellowLight2{
+    background: #b89302;
+}
+
+.greenLight2{
+    background: #045804;
+}
+
+.redLightOn2{
+    background: #f00505;
+}
+
+.yellowLightOn2{
+    background: #fdd73f;
+}
+
+.greenLightOn2{
+    background: #06c406;
+}
+
+.boxButtonColors{
+    display: flex;    
+    padding: 10px; 
+    align-items: center;
+    justify-content: center; 
+}
+
+.boxButton{
+    display: flex;    
+    padding: 10px;
+    align-items: center;
+    justify-content: center;       
+}
+
+button{
+    width: 6em;
+    height: 2.3em;
+    padding: 6px;
+    margin: 5px;
+    font-size: 1.2em;
+    padding: 0.3em;
+    border-radius: 10px;
+    cursor: pointer; 
+    transition-duration: 0.8s;   
+}
+button:hover{
+     transform: scale(0.95);
+}
+
+.redButton{
+    transition-duration: 0.8s;  
+    width: 33%;
+    border: 1px solid #f00505;  
+}
+.redButton:hover{
+    background-color: #f00505; 
+}
+
+.yellowButton{
+    transition-duration: 0.8s;  
+    width: 33%;
+    border: 1px solid #fdd73f;  
+}
+.yellowButton:hover{
+    background-color: #fdd73f; 
+}
+
+.greenButton{
+    transition-duration: 0.8s;  
+    width: 33%;
+    border: 1px solid #06c406;  
+}
+.greenButton:hover{
+    background-color: #06c406; 
+}
+
+

@@ -13,18 +13,32 @@
     </header>
     <main>
         
-        <div class="semaphore">
+        <div id="semaphore">
             
             <div id="red" class="light redLight"></div>
             <div id="yellow" class="light yellowLight"></div>
             <div id="green" class="light greenLight"></div>
-
-            
-
         </div>
 
-        <button onclick="turnOn()">ligar</button>
-        <button onclick="turnOff()">desligar</button>
+        <div id="semaphore2">
+            
+            <div id="red2" class="light2 redLight"></div>
+            <div id="yellow2" class="light2 yellowLight"></div>
+            <div id="green2" class="light2 greenLight"></div>
+        </div>
+
+        <div class="boxButtonColors">            
+            <button class="redButton" onclick="redLight()">Vermelho</button>
+            <button class="yellowButton" onclick="yellowLight()">Amarelo</button>
+            <button class="greenButton" onclick="greenLight()">Verde</button>
+        </div> 
+        
+        <div class="boxButton">
+            <button  onclick="turnOn()">Ligar</button>
+            <button onclick="turnOff()">Desligar</button> 
+        </div>
+
+        
 
     </main>
     <footer>
